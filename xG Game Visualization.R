@@ -17,10 +17,10 @@ game_xG %>%
   ggplot(aes(time, xG_sum, color = team_name)) + 
   geom_line() +
   scale_x_continuous(breaks = seq(0,90, 5),
-                     labels = c(0,  5, 10, 15, 20, 25, 30, 35, 40, "HT", 50, 55, 60, 65, 70, 75, 80, 85, "FT")) +
-  labs(title = "Match Summary",
-       y = "Expected Goals",
-       x = "Time")
+                     labels = c(0, 5, 10, 15, 20, 25, 30, 35, 40, "HT", 50, 55, 60, 65, 70, 75, 80, 85, "FT")) +
+  labs(y = "Expected Goals",
+       x = "Time") +
+  theme_minimal()
 
 
 
